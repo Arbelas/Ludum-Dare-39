@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class CounerRotate : MonoBehaviour {
 
 	//This script counters the rotation of the parent object

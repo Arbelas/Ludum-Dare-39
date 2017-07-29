@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dae85f805258344a80284d921c8b209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPower: 1000
+  maxPower: 500
   rechargeRate: 100
   power: 0
   powerModifier: 0
@@ -260,9 +260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43939c6898d7f0444a579b03abcfe7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerationRate: 3
-  maxSpeed: 10
-  reverseMaxSpeed: -4
+  accelerationRate: 4
+  maxSpeed: 16
+  reverseMaxSpeed: -12
   turnSpeed: 105
   speed: 0
 --- !u!114 &114876018001255888

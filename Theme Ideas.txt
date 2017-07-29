@@ -1,0 +1,53 @@
+Signal Lost:
+	-Old school TV aerial qwop style balancing game.
+	
+Parallel Worlds:
+	-Some sort of world switching mechanic
+
+Moving Fortress:
+
+Running out of power:
+	-Basically Five nights at Freddy's.
+	
+You are alone:
+	-Boring, done before, just going to hope it won't be picked
+
+Start with nothing:
+	-Start without any controls, are given them one by one.
+
+Machines:
+	-Gear based puzzle game
+
+Running out of space:
+	-Something similar to Threes/2048, where you must constantly compress pieces to make space for new ones.
+	-Something Tetris-esque
+
+On/Off:
+	-Light mechanic, trade off between visibility and something else e.g. attracting enemies.
+	-IT support
+
+Connections:
+	-Travelling salesman problem: the game
+	-Public transit game
+	-Rope swinging game
+
+Protect it:
+	-Tower defence (Most submissions will be)
+
+You are not the main character:
+	-Oracle role for a super hero, giving directives to them from the safety of a command centre.
+
+1 vs 100:
+	-
+
+It spreads:
+	-Play as a zombie hivemind?
+	-Smaller scope Plague inc.
+	
+Different Perspective:
+	-Fez like game
+	-Moving 3D objects through 2D plane. (Very difficult to implement)
+
+1 HP:
+	-Fractions?
+	-Hewlett-Packard

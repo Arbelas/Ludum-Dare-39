@@ -2,3 +2,7 @@
 - Use power as a universal resource for everything that the player can do.
 - Have to user power to move between recharging stations
 - Electric car?
+
+-Electric car racing game
+-Tactical tradeoffs between picking up batteries to recharge and taking a shorter route
+-Could just be time trials at the simplest.

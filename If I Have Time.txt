@@ -1,0 +1,4 @@
+POTENTIALLY IMPLEMENT:
+-Diegetic battery on car
+-Rotating front wheels during turns
+-Functional lights that turn off when battery gets low

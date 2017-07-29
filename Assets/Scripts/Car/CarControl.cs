@@ -77,4 +77,9 @@ public class CarControl : MonoBehaviour {
 
 		transform.Translate(Vector2.up * speed * Time.fixedDeltaTime);
 	}
+
+	private void OnTriggerEnter2D(Collider2D collision) {
+		if (collision.tag == "PowerUp") collision.GetComponent<PowerUpBehaviour>().GetPowerUp(gameObject);
+	}
+
 }

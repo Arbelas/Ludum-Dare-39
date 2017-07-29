@@ -21,7 +21,6 @@ public class PowerGaugeScaler : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-		//TODO add real player power to this equation
 		rect.localScale = new Vector2(maxWidth * (powerManager.power / powerManager.maxPower), rect.localScale.y);
 	}
 

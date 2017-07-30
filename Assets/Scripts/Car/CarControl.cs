@@ -87,7 +87,7 @@ public class CarControl : MonoBehaviour {
 		else if (speed < 0) speed += accelerationRate * 2 * Time.fixedDeltaTime;
 		else speed -= accelerationRate * 2 * Time.fixedDeltaTime;
 
-		transform.Translate((-collision.contacts[0].point - (Vector2) transform.position).normalized/5);
+		//transform.Translate((-collision.contacts[0].point - (Vector2) transform.position).normalized/5);
 	}
 
 }

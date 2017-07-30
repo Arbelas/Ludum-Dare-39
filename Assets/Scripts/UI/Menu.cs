@@ -27,4 +27,8 @@ public class Menu : MonoBehaviour {
 		SceneManager.LoadScene("Stats");
 	}
 
+	public void Tutorial() {
+		SceneManager.LoadScene("Tutorial");
+	}
+
 }

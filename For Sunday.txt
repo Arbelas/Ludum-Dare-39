@@ -1,0 +1,7 @@
+FOR SUNDAY, IN ORDER OF IMPORTANCE
+-Complete time trial mode
+-Build menu and tutorial
+-Add music and sound effects
+-Add more scenery
+-Dabble with AI
+-Add more tracks?

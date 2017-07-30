@@ -1,3 +1,4 @@
 POTENTIALLY IMPLEMENT:
 -Rotating front wheels during turns
 -Functional lights that turn off when battery gets low
+-Countdown to start

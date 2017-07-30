@@ -26,7 +26,7 @@ public class CarPowerManager : MonoBehaviour {
 	void FixedUpdate() {
 		// Debug.Log(power);
 
-		if (controller.acceleration != 0) power -= Mathf.Abs(controller.acceleration) * Time.fixedDeltaTime * 10;
+		if (controller.acceleration != 0) power -= Mathf.Abs(controller.acceleration) * Time.fixedDeltaTime * (controller.boosting ? 20 : 10);
 		else power += rechargeRate * Time.fixedDeltaTime;
 		power = Mathf.Clamp(power, 0, maxPower);
 

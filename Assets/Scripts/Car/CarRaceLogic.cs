@@ -45,7 +45,7 @@ public class CarRaceLogic : MonoBehaviour {
 					currentLap++;
 					visitedCheckpoints = 0;
 
-					if(currentLap <= totalLaps) popupText.PushToScreen("Lap " + currentLap, 2f);
+					if(currentLap <= totalLaps) popupText.PushToScreen($"Lap {currentLap}", 2f);
 					else RaceEnd();
 
 				}

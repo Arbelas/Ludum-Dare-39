@@ -12,12 +12,15 @@ public class CarControl : MonoBehaviour {
 	[HideInInspector]
 	public float speed;
 
+	[HideInInspector]
+	public bool boosting;
+
 	private float verticalInput, horizontalInput;
 	private CarPowerManager powerManager;
 
 	public float acceleration {
 		get {
-			return accelerationRate * verticalInput * (verticalInput < 0 && speed > 0 ? 2 : 1);
+			return accelerationRate * verticalInput * (verticalInput < 0 && speed > 0 ? 2 : 1) * (boosting ? 2 : 1);
 		}
 	}
 
@@ -41,12 +44,7 @@ public class CarControl : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-		/*if (Input.GetKeyDown(KeyCode.UpArrow)) maxSpeed++;
-		if (Input.GetKeyDown(KeyCode.DownArrow)) maxSpeed--;
-		if (Input.GetKeyDown(KeyCode.LeftArrow)) turnSpeed -= 5;
-		if (Input.GetKeyDown(KeyCode.RightArrow)) turnSpeed += 5;
-		if (Input.GetKeyDown(KeyCode.Period)) acceleration++;
-		if (Input.GetKeyDown(KeyCode.Comma)) acceleration--;*/
+
 	}
 
 	void FixedUpdate() {
@@ -55,6 +53,8 @@ public class CarControl : MonoBehaviour {
 		horizontalInput = Input.GetAxis("Horizontal");
 
 		verticalInput *= powerManager.powerModifier;
+		Debug.Log(verticalInput);
+		boosting = Input.GetButton("Boost");
 
 		Move();
 	}
@@ -70,7 +70,7 @@ public class CarControl : MonoBehaviour {
 
 		//Debug.Log(speed);
 
-		speed = Mathf.Clamp(speed, reverseMaximumSpeed, maximumSpeed);
+		speed = Mathf.Clamp(speed, reverseMaximumSpeed, (boosting ? maximumSpeed * 2 : maximumSpeed));
 
 		//Debug.Log(turnSpeed * horizontalInput * (speed / maxSpeed) * Time.fixedDeltaTime);
 		transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z + (turnSpeed * horizontalInput * speed / maxSpeed * Time.fixedDeltaTime));

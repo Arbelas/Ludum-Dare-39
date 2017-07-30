@@ -21,6 +21,7 @@ public class PowerGaugeScaler : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
+		//ebug.Log(new Vector2(maxWidth * (powerManager.power / powerManager.maxPower), rect.localScale.y));
 		rect.localScale = new Vector2(maxWidth * (powerManager.power / powerManager.maxPower), rect.localScale.y);
 	}
 

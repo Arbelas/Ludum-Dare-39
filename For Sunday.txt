@@ -1,7 +1,7 @@
 FOR SUNDAY, IN ORDER OF IMPORTANCE
--Complete time trial mode (including boost)
--Build menu and tutorial
--Add music and sound effect
+DONE Complete time trial mode (including boost)
+DONE Build menu and tutorial
+-Add music and sound effects
 -Fix barrier interaction (Potentially redo movement with Unity's 2D physics)
 -Add more scenery
 -Add more powerups

@@ -53,7 +53,7 @@ public class CarControl : MonoBehaviour {
 		horizontalInput = Input.GetAxis("Horizontal");
 
 		verticalInput *= powerManager.powerModifier;
-		Debug.Log(verticalInput);
+		//Debug.Log(verticalInput);
 		boosting = Input.GetButton("Boost");
 
 		Move();

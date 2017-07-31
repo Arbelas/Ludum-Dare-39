@@ -8,6 +8,8 @@ public class PowerUpBehaviour : MonoBehaviour {
 	public float powerBonus = -1f;
 	public float rotationSpeed;
 
+	public AudioClip pickupSound;
+
 	// Use this for initialization
 	void Start() {
 
@@ -27,6 +29,8 @@ public class PowerUpBehaviour : MonoBehaviour {
 		Assert.IsNotNull(powerManager); // Ensure that I haven't messed up somewhere else.
 
 		Debug.Log("Power up!");
+
+		AudioSource.PlayClipAtPoint(pickupSound,transform.position);
 
 		if (powerBonus > 0) powerManager.power += powerBonus;
 		else powerManager.power = powerManager.maxPower;

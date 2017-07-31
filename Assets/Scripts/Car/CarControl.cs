@@ -9,6 +9,9 @@ public class CarControl : MonoBehaviour {
 	public float reverseMaxSpeed;
 	public float turnSpeed;
 
+	//public AudioClip motorSound;
+	public AudioClip boostSound;
+
 	[HideInInspector]
 	public float speed;
 
@@ -55,8 +58,11 @@ public class CarControl : MonoBehaviour {
 		verticalInput *= powerManager.powerModifier;
 		//Debug.Log(verticalInput);
 		boosting = Input.GetButton("Boost");
+		if(Input.GetButtonDown("Boost")) AudioSource.PlayClipAtPoint(boostSound, transform.position);
 
 		Move();
+
+		//if (speed != 0) AudioSource.PlayClipAtPoint(motorSound, transform.position);
 	}
 
 	void Move() {

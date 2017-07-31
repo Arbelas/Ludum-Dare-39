@@ -108,47 +108,47 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &134258743
+--- !u!1 &309289516
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 134258744}
-  - component: {fileID: 134258746}
-  - component: {fileID: 134258745}
+  - component: {fileID: 309289517}
+  - component: {fileID: 309289519}
+  - component: {fileID: 309289518}
   m_Layer: 5
-  m_Name: Batteries
+  m_Name: Mute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &134258744
+--- !u!224 &309289517
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 134258743}
+  m_GameObject: {fileID: 309289516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 935592648}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -166.99998, y: -251.85999}
-  m_SizeDelta: {x: 294.26, y: 58.16}
+  m_AnchoredPosition: {x: -160.19995, y: -349}
+  m_SizeDelta: {x: 294.26, y: 75.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &134258745
+--- !u!114 &309289518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 134258743}
+  m_GameObject: {fileID: 309289516}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -175,13 +175,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collect Batteries to refill it to maximum.
---- !u!222 &134258746
+  m_Text: 'Press M to mute the music
+
+    (And hurt my feelings)'
+--- !u!222 &309289519
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 134258743}
+  m_GameObject: {fileID: 309289516}
 --- !u!1 &698297596
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +396,7 @@ GameObject:
   - component: {fileID: 832862355}
   - component: {fileID: 832862354}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,9 +609,9 @@ RectTransform:
   - {fileID: 832862353}
   - {fileID: 1099746292}
   - {fileID: 1459190512}
-  - {fileID: 134258744}
   - {fileID: 982539420}
   - {fileID: 1193937179}
+  - {fileID: 309289517}
   - {fileID: 698297597}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -647,11 +649,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 935592648}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -163.7, y: -301}
+  m_AnchoredPosition: {x: -167, y: -219}
   m_SizeDelta: {x: 40.119995, y: 40.119995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &982539421
@@ -790,7 +792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -167, y: -129.1}
+  m_AnchoredPosition: {x: -163.5, y: -110.88}
   m_SizeDelta: {x: 294.26, y: 33.149994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099746293
@@ -860,11 +862,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 935592648}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -163.7, y: -363.9}
+  m_AnchoredPosition: {x: -160.19994, y: -291}
   m_SizeDelta: {x: 294.26, y: 75.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193937180
@@ -938,8 +940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -167.00002, y: -183.54}
-  m_SizeDelta: {x: 294.26, y: 59.43}
+  m_AnchoredPosition: {x: -163.5, y: -172}
+  m_SizeDelta: {x: 294.3, y: 89.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459190513
 MonoBehaviour:
@@ -973,7 +975,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your power will slowly drain as you move.
+  m_Text: Your power will slowly drain as you move, collect batteries to refill it
+    to maximum
 --- !u!222 &1459190514
 CanvasRenderer:
   m_ObjectHideFlags: 0

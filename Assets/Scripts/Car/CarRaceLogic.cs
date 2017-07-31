@@ -14,12 +14,14 @@ public class CarRaceLogic : MonoBehaviour {
 	int lastVisitedCheckpoint = 0;
 	int visitedCheckpoints = -1;
 
+	float elapsedTime;
+	float[] lapTimes;
+	int bestLap = -1;
+
 	public int currentLap = 1;
 	public int totalLaps = 3;
 
-	private float elapsedTime;
-	private float[] lapTimes;
-	private int bestLap = -1;
+	public AudioClip countdownSound;
 
 	public float TotalElapsedTime {
 		get {
@@ -62,6 +64,7 @@ public class CarRaceLogic : MonoBehaviour {
 
 		if (Input.GetButtonDown("Restart")) Restart();
 		if (Input.GetButtonDown("Quit")) SceneManager.LoadScene("Menu");
+		if (Input.GetButtonDown("Mute")) GetComponentInChildren<AudioSource>().mute = !GetComponentInChildren<AudioSource>().mute;
 	}
 
 	private void Restart() {
@@ -118,15 +121,22 @@ public class CarRaceLogic : MonoBehaviour {
 
 	IEnumerator Countdown() {
 		Time.timeScale = 0;
+		GetComponentInChildren<AudioSource>().Stop();
 		yield return new WaitForSecondsRealtime(1);
 		popupText.PushToScreen("3!", 1f);
+		AudioSource.PlayClipAtPoint(countdownSound,transform.position);
 		yield return new WaitForSecondsRealtime(1);
 		popupText.PushToScreen("2!", 1f);
+		AudioSource.PlayClipAtPoint(countdownSound, transform.position);
 		yield return new WaitForSecondsRealtime(1);
 		popupText.PushToScreen("1!", 1f);
+		AudioSource.PlayClipAtPoint(countdownSound, transform.position);
 		yield return new WaitForSecondsRealtime(1);
 		popupText.PushToScreen("GO!", 1f);
+		AudioSource.PlayClipAtPoint(countdownSound, transform.position);
 		elapsedTime = 0;
 		Time.timeScale = 1;
+		yield return new WaitForSecondsRealtime(0.2f);
+		GetComponentInChildren<AudioSource>().Play();
 	}
 }
